@@ -2,6 +2,8 @@
 
 This is a duckyscript originally designed for Flipper-Zero to drop Desktop Goose on a Windows PC.
 
+------------------------------------------------------------------------------------------------------
+
 Currently there is no auto-configurator for Windows but it's in the works. Steps to configure manually:
     
     1) Replace the YOUR_IP value in GooseDropper.txt with your IP
@@ -14,6 +16,7 @@ Currently there is no auto-configurator for Windows but it's in the works. Steps
     
     5) Copy to your Flipper or Rubber-Ducky and PWN!
 
+--------------------------------------------------------------------------------------------------------------
 
 **Important Notes:**
 
