@@ -1,4 +1,4 @@
-======= Goose Dropper ========
+**======= Goose Dropper ========**
 
 This is a duckyscript originally designed for Flipper-Zero to drop Desktop Goose on a Windows PC.
 
@@ -14,7 +14,8 @@ Currently there is no auto-configurator for Windows but it's in the works. Steps
     
     5) Copy to your Flipper or Rubber-Ducky and PWN!
 
-Important Notes:
+
+**Important Notes:**
 
 Ensure configuration is run while on the same network as your target, re-configure with each new network.
 
