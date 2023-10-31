@@ -28,6 +28,9 @@ Ensure configuration is run while on the same network as your target, re-configu
 All credit goes to Samperson for the development of Desktop Goose: https://itch.io/profile/samperson | https://twitter.com/samnchiet
 
 **=== v2.0 Notes ==**
+    
     Added persistence via a PowerShell script that makes a shortcut in the startup folder.
+    
     Revamped updater with more options and better dialogue. 
+    
     Bugfixes to ensure payloads get delivered successfully.
