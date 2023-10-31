@@ -12,7 +12,7 @@ Currently there is no auto-configurator for Windows but it's in the works. Steps
 
     3) Copy PersistentGoose.ps1 into the newly renamed Update folder.
    
-    4) Re-ZIP the Update directory and name it Chrome_Updater.txt.
+    4) Re-ZIP the Update directory and name it Chrome_Updater.
     
     5) Start some form of simple webserver/fileshare on port 1337 (or change the port to reflect your choice).
     
