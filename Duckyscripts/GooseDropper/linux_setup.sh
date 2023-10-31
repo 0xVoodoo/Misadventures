@@ -78,5 +78,5 @@ then
 	python3 -m http.server 1337 && echo "PWNED!"
 else
 	clear
-	echo "Finished... Happy PWNing (don't be a skid)!"
+	echo "Finished... Happy PWNing! (don't be a skid)!"
 fi
