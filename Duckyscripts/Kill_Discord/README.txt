@@ -1,3 +1,6 @@
+# This specific "Exploit" has been patched and is no-longer usable.
+---
+
 Kill_Discord is a duckyscript that does exactly what the name implies.
 
 As of April 2024 the string "http://./\<#0>:  ://./<#0>" without the quotes will crash your Discord client when pasted into any message box.
