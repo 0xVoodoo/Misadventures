@@ -2,23 +2,6 @@
 
 This is a duckyscript originally designed for Flipper-Zero to drop Desktop Goose (by Samperson) on a Windows PC. **NOW WITH PERSISTENCE**
 
-------------------------------------------------------------------------------------------------------
-
-------------------------------------------------------------------------------------------------------
-
-Currently there is no auto-configurator for Windows but it's in the works. Steps to configure manually:
-    
-    1) Replace the YOUR_IP value in GooseDropper.txt with your IP.
-    
-    2) Download Desktop Goose and extract it, rename the 'DesktopGoose v.031' folder from inside the zip to Update.
-
-    3) Copy PersistentGoose.ps1 into the newly renamed Update folder.
-   
-    4) Re-ZIP the Update directory and name it Chrome_Updater.
-    
-    5) Start some form of simple webserver/fileshare on port 1337 (or change the port to reflect your choice).
-    
-    6) Copy to your Flipper or Rubber-Ducky and PWN!
 
 --------------------------------------------------------------------------------------------------------------
 **Important Notes:**
@@ -34,3 +17,9 @@ All credit goes to Samperson for the development of Desktop Goose: https://itch.
     Revamped updater with more options and better dialogue. 
     
     Bugfixes to ensure payloads get delivered successfully.
+
+**=== v2.1 Notes ==**
+    
+    Simplified configurators to remove unnecessary complexity
+    
+    Added Windows auto-configuration tool.
